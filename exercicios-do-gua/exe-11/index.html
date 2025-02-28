@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens</title>
+</head>
+<body>
+    <section>
+        <h1>O pai vai mexer com imagens flexiveis</h1>
+        <p>
+           Para fazer isso claro que eu irei utilizar as tags picture e a tag source,deixando claro que é midia type
+        </p>
+        <picture>
+            <source media="(max-width: 750px )" srcset="hatake/hatakinho.jpg" type="image/jpg">
+            <source media="(max-width: 1050px )" srcset="hatake/hatake.jpg" type="image/jpg">
+            <img src="hatake/hatakão.jpg" alt="é o cara">
+        </picture>
+    </section>
+    <section>
+        <h1>Agora vem os Audios</h1>
+        <audio preload="metadata" controls>
+            <source src="midia/Smoke - Lish Grooves.mp3" type="audio/mpeg">
+            <source src="midia/Smoke - Lish Grooves.ogg" type="audio/ogg">
+            <p>Se por acaso não apareceu nenhuma música para você, significa que seu navegador não tem compatibilidade com midias de audio. <a href="midia/Smoke - Lish Grooves.mp3">O link para download da música</a></p>
+        </audio>
+    </section>
+    <section>
+        <h1>E Finalmente os Videos</h1>
+        <h2>Primeiro os internos</h2>
+        <video controls >
+            <source src="hatake/video.mp4" type="video/mp4" >
+        </video>
+        <h2>Depois os Externos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Sg00wG3b7F8?si=ZvW4JuCfRveZDCqe" title="Ê o Gutinho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+</body>
+</html>
