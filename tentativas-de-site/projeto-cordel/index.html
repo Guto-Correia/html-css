@@ -19,14 +19,6 @@
             url("fonts/parapoesia/KaushanScript-Regular.ttf")format("truetype"),
             url("fonts/parapoesia/DancingScript-Medium.ttf")format("truetype");
         }
-
-        
-        /*agora vc tem que ajeita a imagem pra ter o efeito certo
-            background-image:url("imagens/beija-flor.jpg");
-            background-size: cover;
-            background-position: bottom right;
-            background-attachment:fixed;
-            */
         *{
             margin:0;
             padding:0;
@@ -34,6 +26,8 @@
         :root{
             --titulo: "fontes1";
             --poesia:"fontes2";
+            --faunaflora:url("imagens/beija-flor.jpg");
+            --cartas:url("imagens/carta.jpg");
         }
         a{
             color:#fff;
@@ -61,6 +55,25 @@
             font-family:var(--poesia);
             line-height: 2em;
         }
+        #imagem1{
+            background-image:var(--faunaflora);
+            background-size: cover;
+            background-position: center right;
+            background-attachment:fixed;
+        }
+        #imagem2{
+            background-image:var(--cartas);
+            background-size: cover;
+            background-position: center left;
+            background-attachment:fixed;
+        }
+        .imagens>p{
+            background-color:#00000056;
+            color:#fff;
+            text-shadow:1px 1px 3px #000; 
+            padding:5px; 
+            width:210px;
+        }
         footer{
             background-color:#000;
             font-size:1rem;
@@ -84,7 +97,7 @@
                 Antes que eu caduque <br>
                 Vou dizer tudo em poesia.</p>
         </div>
-        <div class="normal" id="beija-flor">
+        <div class="normal imagens" id="imagem1">
             <p>Não é mais como era antes <br>
                 É tudo abreviado <br>
                 "Você" só tem duas letras <br>
@@ -110,7 +123,7 @@
                 Pra entender como fica <br>
                 Decifre esse rabisco.</p>
         </div>
-        <div class="normal">
+        <div class="normal imagens" id="imagem2">
             <p>Tenho saudade das cartas <br>
                 Escritas com a própria mão <br>
                 Mandava no mês de Junho <br>
