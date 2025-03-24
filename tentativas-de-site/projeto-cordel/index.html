@@ -27,7 +27,7 @@
             background-position: bottom right;
             background-attachment:fixed;
             min-height:380px;
-            eu posso colocar tres divs. Uma avo que vai determinar o tamanho min e max, outtra pai,que vai ter a foto e vai ter 100% de tudo,assim seguindo sempre o avo. e outra filho para o paragrafo, tiver no video do projeto android do guanabara,ajudoiu muito,depois eu vou tentar.
+            o meu background só vai se adaptar a diferentes tamanhos se o filho dele estiver necessitando de um crescimento ou encolhimento,caso contrario não tera motivo.
             */
         *{
             margin:0;
@@ -56,17 +56,11 @@
             font-family:Arial, Helvetica, sans-serif;
             font-size:1rem;
         }
-        main p{
-            font-family:var(--poesia);
-        }
-        #beija-flor{
-            background-image: url("imagens/beija-flor.jpg");
-            height: 100vh;
-
-        }
         .normal{
-            padding: 50px 30px;
-            font-size:1.05em;
+            padding: 60px 30px;
+            font-size:1.1em;
+            font-family:var(--poesia);
+            line-height: 2em;
         }
         footer{
             background-color:#000;
@@ -91,7 +85,7 @@
                 Antes que eu caduque <br>
                 Vou dizer tudo em poesia.</p>
         </div>
-        <div id="beija-flor">
+        <div class="normal" id="beija-flor">
             <p>Não é mais como era antes <br>
                 É tudo abreviado <br>
                 "Você" só tem duas letras <br>
@@ -117,7 +111,7 @@
                 Pra entender como fica <br>
                 Decifre esse rabisco.</p>
         </div>
-        <div>
+        <div class="normal">
             <p>Tenho saudade das cartas <br>
                 Escritas com a própria mão <br>
                 Mandava no mês de Junho <br>
