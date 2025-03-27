@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            text-align:center;
+            background-color:#284c83;
+        }
+        h1{
+            color: #063600;
+            text-shadow:1px 1px 10px lightgreen;
+            font-size: 3em;
+        }
+        table{
+            border-collapse: collapse;
+            width:400px;
+            height:300px;
+            margin:auto;
+            box-shadow:2px 2px 5px #00000062;
+        }
+        tr.pintada{
+            background-color:#555;
+            color:#fff;
+        }
+        tr{
+            background-color:#fff;
+        }
+        td{
+            border: 1px solid #000;
+            text-align:center;
+            vertical-align:middle;
+        }
+        td.falsacoluna{
+            vertical-align:top;
+            text-align:left;
+        }td.falsacoluna2{
+            vertical-align:bottom;
+            text-align:right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Fazendo a Primeira Tabela</h1>
+    <table>
+        <tr class="pintada">
+            <td class="falsacoluna">A1</td>
+            <td>A2</td>
+            <td class="falsacoluna2">A3</td>
+        </tr>
+        <tr>
+            <td class="falsacoluna">B1</td>
+            <td>B2</td>
+            <td class="falsacoluna2">B3</td>
+        </tr>
+        <tr class="pintada">
+            <td class="falsacoluna">C1</td>
+            <td>C2</td>
+            <td class="falsacoluna2">C3</td>
+        </tr>
+        <tr>
+            <td class="falsacoluna">D1</td>
+            <td>D2</td>
+            <td class="falsacoluna2">D3</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
