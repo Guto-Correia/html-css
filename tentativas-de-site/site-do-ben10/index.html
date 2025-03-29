@@ -6,6 +6,13 @@
     <title>Wiki10</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <style>
+        @font-face {
+            font-family:titulo;
+            src: url("fonts/BADABB.TTF") format("truetype");
+        }
+        :root{
+            --logo:titulo;
+        }
         *{
             margin:0;
             padding:0;
@@ -14,26 +21,21 @@
         header{
             background-color:#1e0c1b;
             position:relative;
-        }
-        header a{
-            text-decoration:none;
-            color:#fff;
-        }
-        header>h1{
-            padding: 15px 10px 5px 10px;
-            width:120px;
+            height:70px;
         }
         a#github{
             position:absolute;
             padding: 25px 10px 5px 10px;
             right:0px;
             top:0px;
+            text-decoration:none;
+            color:#fff;
         }
+        /*eu vou resolver o negocio da imagem para a logo*/
     </style>
 </head>
 <body>
         <header>
-            <h1><a href="index.html">Wiki10</a></h1>
             <a href="https://github.com/guto-correia" id="github" target="_blank">Meu github</a>
         </header>
     <main>
