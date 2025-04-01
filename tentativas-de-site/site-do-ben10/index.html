@@ -12,6 +12,7 @@
         }
         :root{
             --logo:titulo;
+            --corheader:#1e0c1b;
         }
         *{
             margin:0;
@@ -19,19 +20,19 @@
             font-family:arial,helvtica,sans-serif;
         }
         header{
-            background-color:#1e0c1b;
+            background-color:var(--corheader);
             position:relative;
             height:85px;
         }
 
-        #filho{
+        #fundodalogo{
             background-color: white;
             height: 75px;
             width: 170px;
             margin-left: 10px;
             border-radius:3px;
         }
-        #neto{
+        #fundofilho{
             position: absolute;
             height: 55px;
             background-color: #7fffaa;
@@ -47,7 +48,7 @@
             left: 3px;
             z-index: 2;
         }
-        header p{
+        header #paragrafologo{
             font-size: 2.5em;
             text-shadow:3px 3px 0px #000000d5;
             position: absolute;
@@ -57,28 +58,45 @@
             left: 37px;
             font-family:var(--logo),Arial, Helvetica, sans-serif;
         }
-        #span{
+        #spandalogo{
             font-family: var(--logo);
             color:#003002;
         }
-        a#github{
+        #meucontato{
             position:absolute;
-            padding: 25px 10px 5px 10px;
-            right:0px;
+            top:12%;
+            right:5%;
+            width:90px;
+            height: 65px;
+        }
+        #meucontato img{
+            left:22%;
             top:0px;
-            text-decoration:none;
+        }
+        #meucontato p{
+            top:80%;
+            position: absolute;
             color:#fff;
+        }
+        #meucontato p:hover{
+            text-decoration:underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <div id="filho">
-            <div id="neto">
-                <a href="index.html"><img src="imagens/chama.png" alt="#"><p>Ben<span id="span">10</span></p></a>
+        <div id="fundodalogo">
+            <div id="fundofilho">
+                <a href="index.html"><img src="imagens/chama.png" alt="#"><p id="paragrafologo">Ben<span id="spandalogo">10</span></p></a>
             </div>
         </div>
-        <a id="github" href="https://github.com/guto-correia">Meu github</a>
+        <div id="meucontato">
+            
+            <a href="https://github.com/guto-correia" target="_blank">
+                <p>Meu GitHub</p>
+                <img src="imagens/github-mark-white.svg" alt="gituhub">
+            </a>
+        </div>
     </header>
     <main>
         <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Incidunt fugit quia facere id <br>qui veniam nulla architecto, dignissimos. <br>Esciunt commodi ipsam. Laudantium temporibus tempora,<br>architecto pariatur beatae enim amet?</p>
@@ -96,7 +114,7 @@
             <li>Item#</li>
         </ul>
         
-        <button><a href="#">Avançar</a></button>
+        <button><a href="#" target="_blank">Avançar</a></button>
     </main>
 </body>
 </html>
