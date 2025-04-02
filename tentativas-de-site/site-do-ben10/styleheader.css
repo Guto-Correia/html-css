@@ -65,9 +65,10 @@ header #paragrafologo{
     top:0px;
 }
 #meucontato p{
-    top:80%;
+    top:74%;
     position: absolute;
     color:#fff;
+    width: 110px;
 }
 #meucontato p:hover{
     text-decoration:underline;
