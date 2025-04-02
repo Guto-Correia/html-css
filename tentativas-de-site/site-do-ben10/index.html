@@ -12,10 +12,91 @@
     padding:0;
     font-family:arial,helvtica,sans-serif;
 }
-/*esquece isso do inline block,de fazer frufrufu sem flex,vamo ter que estilizar com o site desse modo scroll mesmo,divirta-se!*/
-main p{
+/*esquece isso do inline block,de fazer frufrufu sem flex,vamo ter que estilizar com o site desse modo scroll mesmo,
+alguma partes pode ser em roxo/vinho,o main azul,sessões pretas com bordas neons verdes e color branca
+divirta-se!*/
+body{
+    background-image:url("imagens/teste2.jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height:100%;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+.sessao1{
+    background-color: #2e2e2e;
+    color:#fff;
+    border-radius:3%;
+    max-width:600px;
+    min-width:300px;
+    margin:20px auto;
+    border:1px solid #279139;
+    box-shadow:0 0 5px #279139,0 0 10px #279139,0 0 15px #279139;
+}
+.sessao1 p{
+    text-align:center;
     font-size: 1.2em;
+    min-width:300px;
+    max-width:600px;
+    padding:5px 20px;
     line-height: 1.9em;
+}
+.sessao1 h1{
+    font-variant: small-caps;
+    text-align:center;
+    font-size:2.7em;
+    color:#52aa60;
+    padding:5px 20px;
+    text-shadow:0 0 2px #279139,0 0 4px #279139,0 0 7px #52aa60;
+}
+.sessao1 a,footer a{
+    color:#52aa60;
+    text-shadow:0 0 2px #279139,0 0 5px #279139,0 0 7px #279139;
+}
+.sessao1 article{
+    text-align:center;
+}
+h2,h3{
+    padding:5px 20px;
+    color:#56dd6c;
+    text-shadow:1px 1px 0 #00000096;
+    font-variant:small-caps;
+    font-size:1.8em;
+}
+.sessao1 img{
+    border-radius:3%;
+    border:1px solid #279139;
+    box-shadow:0 0 2px #279139,0 0 4px #279139,0 0 6px #279139;
+}
+table,th,td{
+    border-collapse: collapse;
+    border:1px solid #000;
+    padding:5px;
+}
+table{
+    margin:10px auto;
+}
+.num{
+    text-align:right;
+}
+td{
+    text-align:left;
+}
+#button a{
+    display: block;
+    padding:5px;
+    border-radius:10px;
+    border:none;
+    margin: 10px;
+    background-color: #2e2e2e;
+}
+#button{
+    text-align: right;
+}
+footer{
+    color:#fff;
+    padding:10px;
+    text-align: center;
 }
     </style>
 </head>
@@ -35,34 +116,62 @@ main p{
         </div>
     </header>
     <main>
-        <section class="sessao sessao1">
+        <section class="sessao1">
+            <h1>História Rápida</h1>
             <p>
-                Este site foi uma ideia do meu irmão,mas que serviu muito bem bem como estudo para mim.Nele nós temos <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a> e <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS</a>,<a href="https://pt.wikipedia.org/wiki/Ben_10" target="_blank">Ben10</a>,e um senso de entrega pois eu quero terminar e mostrar para o meu irmão. E pode ser que em algum dia esse site abrigue a versão completa da reeditação do som do <a href="https://www.youtube.com/watch?v=0ihSPjRwbFQ" target="_blank">Ma4kim: Ben10 Alien Force</a> feita por ele,só aguardem hahaha!
+                Este site foi uma ideia do meu irmão(Dacylan),mas que serviu muito bem bem como estudo para mim.Nele nós temos <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a>,<a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS</a>,<a href="https://pt.wikipedia.org/wiki/Ben_10" target="_blank">Ben10</a>,e um senso de entrega já  que eu quero terminar e mostrar para o meu irmão. E pode ser que em algum dia esse site abrigue a versão completa da reeditação do som do <a href="https://www.youtube.com/watch?v=0ihSPjRwbFQ" target="_blank">Ma4kim: Ben10 Alien Force</a> feita por ele,só aguardem hahaha!
             </p>
-            <article><img src="" alt=""></article>
-        </section>
-        <section class="sessao sessao2">
-            <article> 
-                <h3>Aliens que nosso Benio mais usou em Alien Force</h3>
-                <ol>
-                    <li>Arraia jato 42</li>
-                    <li>Chama 42</li>
-                    <li>Fogo Fatuo 45</li>
-                    <li>Besta 45</li>
-                    <li>Bala de Canhão 46</li>
-                    <li>Diamante 50</li>
-                    <li>Xlr8 52</li>
-                    <li>Friagem 58</li>
-                    <li>Quatro Braços 73</li>
-                    <li>Enormossauro &#8734;</li>
-                </ol>
-            </article>
+            <aside>
+            <article>
+                <h2>O que meu irmão já editou:</h2>
+                <img src="imagens/capa-do-video.jpeg" alt="capa do video do ben10 alien force do ma4kim">
             
-            <button><a href="#" target="_blank">Avançar</a></button>
+                    <h3>Aliens que nosso Benio mais usou em Alien Force</h3>
+                    <table>
+                        <tr>
+                            <th>Alien</th>
+                            <th>Aparições</th>
+                            <th>Alien</th>
+                            <th>Aparições</th>
+                        </tr>
+                        <tr>
+                            <td>1.Arraia Jato</td>
+                            <td class="num">42</td>
+                            <td>6.Diamante</td>
+                            <td class="num">50</td>
+                        </tr>
+                        <tr>
+                            <td>2.Chama</td>
+                            <td class="num">42</td>
+                            <td>7.Xlr8</td>
+                            <td class="num">52</td>
+                        </tr>
+                        <tr>
+                            <td>3.Fogo Fatuo</td>
+                            <td class="num">45</td>
+                            <td>8.Friagem</td>
+                            <td class="num">58</td>
+                        </tr>
+                        <tr>
+                            <td>4.Besta</td>
+                            <td class="num">45</td>
+                            <td>9.Quatro Braços</td>
+                            <td class="num">73</td>
+                        </tr>
+                        <tr>
+                            <td>5.Bala de Canhão</td>
+                            <td class="num">46</td>
+                            <td>10.Enormossauro</td>
+                            <td class="num">&#8734</td>
+                        </tr>
+                    </table>
+            </aside>
+            </article>
+            <div id="button"><a href="seleção.html">Avançar</a></div>
         </section>
     </main>
     <footer>
-        <p>Site feito por Guto Correia</p>
+        <p>Site feito por <a href="https://github.com/guto-correia" target="_blank">Guto Correia</a></p>
     </footer>
 </body>
 </html>

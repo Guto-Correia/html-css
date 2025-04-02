@@ -5,7 +5,7 @@
 }
 :root{
     --logo:titulo;
-    --corheader:#3a1c35;
+     /*cor de antes #3a1c35*/
 }
 *{
     margin:0;
@@ -15,7 +15,7 @@
 header{
     background-color:var(--corheader);
     position:relative;
-    height:85px;
+    height:76px;
 }
 #fundodalogo{
     background-color: white;
@@ -55,7 +55,7 @@ header #paragrafologo{
 }
 #meucontato{
     position:absolute;
-    top:12%;
+    top:7%;
     right:5%;
     width:90px;
     height: 65px;
