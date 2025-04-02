@@ -45,7 +45,7 @@ header #paragrafologo{
     position: absolute;
     color:#fff;
     font-weight: bold;
-    top:-10%;
+    top:14px;
     left: 37px;
     font-family:var(--logo),Arial, Helvetica, sans-serif;
 }
@@ -65,7 +65,7 @@ header #paragrafologo{
     top:0px;
 }
 #meucontato p{
-    top:60%;
+    top:78%;
     position: absolute;
     color:#fff;
     width: 110px;
